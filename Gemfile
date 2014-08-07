@@ -4,4 +4,4 @@ gem 'rails', '4.1.4'
 gem 'rails-api'
 gem 'spring', :group => :development
 gem 'pg'
-gem 'devise'
+gem 'devise', '~> 3.2.4'
