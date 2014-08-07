@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: bezagentstva_development
+  username: some_username
+  password: some_password
+
+test:
+  <<: *default
+  database: watchlist_test
+
+production:
+  <<: *default
+  database: watchlist_production
+  username: 
+  password: <%= ENV['WATCHLIST_DATABASE_PASSWORD'] %>
